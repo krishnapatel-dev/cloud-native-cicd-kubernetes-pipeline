@@ -9,9 +9,9 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/krishnapatel-dev/cloud-native-cicd-kubernetes-pipeline.git'
+                git branch: 'main', url: 'https://github.com/krishnapatel-dev/cloud-native-cicd-kubernetes-pipeline.git'
             }
-        }
+}
 
         stage('Build App') {
             steps {

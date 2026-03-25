@@ -19,7 +19,7 @@ pipeline {
 
         stage('Build App') {
             steps {
-                bat 'cd app && mvn clean package'
+                bat 'cd app && "C:\\Maven\\apache-maven-3.9.14\\bin\\mvn" clean package'
             }
         }
 

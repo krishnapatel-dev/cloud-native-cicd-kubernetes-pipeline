@@ -8,9 +8,12 @@ public class App {
 
         server.createContext("/", exchange -> {
             String response = "Hello from Kubernetes 🚀";
-            exchange.sendResponseHeaders(200, response.length());
+
+            exchange.sendResponseHeaders(200, response.getBytes().length);
+
             OutputStream os = exchange.getResponseBody();
             os.write(response.getBytes());
+            os.flush();   // recommended
             os.close();
         });
 

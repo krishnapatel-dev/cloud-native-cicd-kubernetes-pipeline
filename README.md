@@ -64,7 +64,7 @@ cloud-native-cicd-kubernetes-pipeline/
 
 ### 1️⃣ Clone Repository
 
-git clone https://github.com/your-username/cloud-native-cicd-kubernetes-pipeline.git
+git clone https://github.com/your-usernamekrishnapatel-dev/cloud-native-cicd-kubernetes-pipeline.git
 cd cloud-native-cicd-kubernetes-pipeline
 
 ---
